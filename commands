@@ -102,13 +102,14 @@ lab0/drifblim5/delcatty:
 lab0/drifblim5/dusknoir:
 lab0/drifblim5/electrike:
 cat lab0/nidoking7/* 2>&1 | sort -r | cat -n
-     1	Xogw Icy
-     2	Wind Iron Defense Magic Coat Magnet Rise Signal Beam Sleep Talk Snore
-     3	weight=73.9 height=43.0 atk=9
-     4	Uproar Weather Ball+
-     5	def=7
-     6	Cnoco6ности Overgrow Venom Effect Spore
-     7	Chlorophyll	
+     1	Wind Iron Defense Magic Coat Magnet Rise Signal Beam Sleep Talk Snore
+     2	weight=73.9 height=43.0 atk=9
+     3	Uproar Weather Ball
+     4	def=7
+     5	Cnoco6ности Overgrow Venom Effect Spore
+     6	Chlorophyll
+     7	cat: lab0/nidoking7/gallade: Is a directory
+     8	Xogw Icy	
 ls -Rl lab0 2>/dev/null | grep ".*5$" | sort -k6,7
 -rw-r--r--  1 s504775 studs 107  8 нояб. 21:12 wooper5
 drwxr-xr-x  6 s504775 studs   8  8 нояб. 20:58 drifblim5
@@ -129,19 +130,3 @@ rm Copy_*
 rm nidoqueen7/seedotlickitu*
 rmdir  -r nidoqueen7
 rmdir drifblim5/electrike
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
