@@ -1,0 +1,147 @@
+mkdir lab0
+cd lab0
+mkdir drifblim5
+touch drifblim5/glaceon
+touch drifblim5/drifblim
+mkdir drifblim5/dusknoir
+mkdir drifblim5/electrike
+mkdir drifblim5/taillow
+mkdir drifblim5/delcatty
+touch haunter0
+touch lickitung4
+mkdir nidoking7
+touch nidoking7/amoonguss
+touch nidoking7/roselia
+touch nidoking7/vaniluxe
+touch nidoking7/ariados
+mkdir nidoking7/gallade
+mkdir nidoqueen7
+mkdir nidoqueen7/ledian
+mkdir nidoqueen7/seaking
+touch nidoqueen7/flareon
+touch nidoqueen7/dragonair
+touch nidoqueen7/seedot
+touch wooper5
+cat >drifblim5/glaceon << 'EOF'
+Cnoco6ности Freezing Point Snow Cloak Clear
+Body
+EOF
+cat > drifblim5/drifblim << 'EOF'
+ weight=33.1 height=47.0 atk=8
+def=4
+EOF
+cat > lickitung4 << 'EOF'
+ sat=6 sdef=8
+spd=3
+EOF
+cat > nidoking7/amoonguss << 'EOF'
+Cnoco6ности Overgrow Venom Effect Spore
+Chlorophyll
+EOF
+cat > nidoking7/vaniluxe << 'EOF'
+Xogw Icy
+Wind Iron Defense Magic Coat Magnet Rise Signal Beam Sleep Talk Snore
+Uproar Weather Ball
+EOF
+cat > nidoking7/ariados << 'EOF'
+weight=73.9 height=43.0 atk=9
+def=7
+EOF
+cat > nidoqueen7/dragonair << 'EOF'
+Тип диеты
+Omnivore
+EOF
+cat > nidoqueen7/seedot << 'EOF'
+Ходы Body Slam Defense Curl Double-Edge Foul Play
+Giga Drain Rollout Seed Bomb Sleep Talk Snore Spite Synthesis Worry 
+Seed
+EOF
+cat > wooper5 << 'EOF'
+Возможности Overland=6 Surface=7 Underwater=4 Jump=3
+Power=1 Intelligence=3 Fountain=0 Gilled=0
+EOF
+cat > nidoqueen7/flareon << 'EOF'
+EOF
+cat > haunter0 << 'EOF'
+Возможности sky=9 Power=2 Intelligence=3
+Invisibility=0 Phasing=0
+EOF
+chmod 337 drifblim5
+chmod 555 drifblim5/dusknoir
+chmod u=,g=rw,o= drifblim5/glaceon
+chmod u=rx,g=rwx,o=rwx drifblim5/electrike
+chmod: drifblim5/electrike: No such file or directory
+chmod u=rx,g=rwx,o=wx drifblim5/taillow
+chmod u=wx,g=x,o=x drifblim5/delcatty
+chmod u=,g=,o=rw drifblim5/drifblim
+chmod u=rx,g=x,o=wx nidoking7
+chmod 440 nidoking7/amoonguss
+chmod u=,g=rw,o=w nidoking7/roselia
+chmod u=r,g=,o=r nidoking7/vaniluxe
+chmod 400 nidoking7/ariados
+chmod 550 nidoking7/gallade
+chmod u=wx,g=wx,o=rx nidoqueen7
+chmod u=rx,g=x,o=w nidoqueen7/ledian
+chmod u=wx,g=wx,o=wx nidoqueen7/seaking
+chmod u=rw,g=w,o=r nidoqueen7/flareon
+chmod u=r,g=r,o= nidoqueen7/dragonair
+chmod u=r,g=r,o=r wooper5
+ln lickitung4 nidoqueen7/seedotlickitung
+ln -s drifblim5 Copy_28
+cat nidoking7/vaniluxe nidoqueen7/dragonair > lickitung4_10
+cp haunter0 nidoking7/gallade/
+cp -r nidoking7 drifblim5/taillow/
+rm -f nidoqueen7/seedotlickitung
+ln -s lab0/lickitung4 lab0/nidoqueen7/seedotlickitung
+cp wooper5 nidoqueen7/flareonwooper
+cd ..
+cat $(ls -R lab0 | grep "7$") 2>&1 | wc -c > /tmp/lab0_chars_count.txt
+ls -Rl lab0 2>/tmp/lab0_access_errors.txt | grep "dri" | sort -k6,7 | head -4
+lab0/drifblim5:
+lab0/drifblim5/delcatty:
+lab0/drifblim5/dusknoir:
+lab0/drifblim5/electrike:
+cat lab0/nidoking7/* 2>&1 | sort -r | cat -n
+     1	Xogw Icy
+     2	Wind Iron Defense Magic Coat Magnet Rise Signal Beam Sleep Talk Snore
+     3	weight=73.9 height=43.0 atk=9
+     4	Uproar Weather Ball+
+     5	def=7
+     6	Cnoco6ности Overgrow Venom Effect Spore
+     7	Chlorophyll	
+ls -Rl lab0 2>/dev/null | grep ".*5$" | sort -k6,7
+-rw-r--r--  1 s504775 studs 107  8 нояб. 21:12 wooper5
+drwxr-xr-x  6 s504775 studs   8  8 нояб. 20:58 drifblim5
+lrwxr-xr-x  1 s504775 studs   9  8 нояб. 21:18 Copy_28 -> drifblim5
+wc -l lab0/nidoking7/* 2>/dev/null | sort -nr
+       7 total
+       3 lab0/nidoking7/vaniluxe
+       2 lab0/nidoking7/ariados
+       2 lab0/nidoking7/amoonguss
+       0 lab0/nidoking7/roselia
+ls -Rl lab0 2>/dev/null | grep -E " n[^ ]*$" | sort -k2,2n | tail -3
+drwxr--r--  3 s504775 studs   7 11 нояб. 18:13 nidoking7
+drwxr--r--  4 s504775 studs   9 11 нояб. 18:17 nidoqueen7
+cd lab0
+rm wooper5
+rm nidoqueen7/seedot
+rm Copy_*
+rm nidoqueen7/seedotlickitu*
+rmdir  -r nidoqueen7
+rmdir drifblim5/electrike
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
